@@ -1,0 +1,13 @@
+name: Terraform fmt
+on:
+    pull_request:
+        branches: main
+jobs:
+    terraform-fmt:
+        name: Terraform Format
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: hashicorp/setup-terraform@v3
+            - id: fmt
+              run: terraform fmt -check
