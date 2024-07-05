@@ -27,3 +27,8 @@ resource "docker_container" "nginx" {
   }
 }
 
+esource  "wibble_test" "fake resource {
+Broken = yes
+most definately
+
+}
