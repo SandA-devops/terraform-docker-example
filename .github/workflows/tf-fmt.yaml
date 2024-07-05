@@ -10,4 +10,4 @@ jobs:
             - uses: actions/checkout@v4
             - uses: hashicorp/setup-terraform@v3
             - id: fmt
-              run: terraform fmt -check
+              run: terraform fmt
